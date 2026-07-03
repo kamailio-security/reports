@@ -13,9 +13,10 @@ but you have to maintain the installation from git repository, because packages 
 | 5.7.x   | :question: (limited) |
 | < 5.7   | :x:                  |
 
-## Reporting a Vulnerability
+## Reporting A Vulnerability
 
-If you believe there's a security vulnerability, please don't use the public forums. Submiting using the form linked at:
+If you believe there's a security vulnerability, please don't use the public forums. Submiting using the form 
+`Report a vulnerability` linked on upper right corner at:
 
 - https://github.com/kamailio-security/reports/security
 
