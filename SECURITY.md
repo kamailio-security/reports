@@ -16,7 +16,7 @@ but you have to maintain the installation from git repository, because packages 
 ## Reporting A Vulnerability
 
 If you believe there's a security vulnerability, please don't use the public forums. Submiting using the form 
-`[Report a vulnerability](https://github.com/kamailio-security/reports/security/advisories/new)` linked on upper right corner at:
+[`Report a vulnerability`](https://github.com/kamailio-security/reports/security/advisories/new) linked on upper right corner at:
 
 - https://github.com/kamailio-security/reports/security
 
