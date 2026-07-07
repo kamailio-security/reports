@@ -28,6 +28,8 @@ The report should include the following information
 - If the issue was discovered by running Kamailio in production or by code analysis with AI or other tools
 - A detailed explanation of how this issue can be exploited and/or reproduced
 
+The potential security issues have to be reported on this repository for the core of Kamailio and the modules enumerated later in this document in the section `List Of Modules`.
+
 ### After The Report
 
 - A member of the Kamailio Security Team will respond
@@ -48,6 +50,40 @@ The Kamailio project release security fixed in the normal time based maintenance
 2. Time for verification and bug fix from Kamailio development: 5 working days (could be extended e.g. in vacation period)
 3. Waiting time for public announcement after the fix is in an official release: 90 days
 4. Project preparation time for kamailio.org announcement: 3 working days
+
+## List Of Modules
+
+Kamailio has a large set of modules, many of them were designed to be used on private network or processing only traffic from
+trusted peers or they are in experimetal state. For them, security was not considered a high priority yet and any issue has
+to be reported as a bug to Kamailio's tracker available at:
+
+- https://github.com/kamailio/kamailio/issues
+
+The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability
+and their details are not considered sensitive to be kept private.
+
+The next table provides the list of modules for which the potential security issues have to reported here. If the module is not
+listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
+
+|               |             |              |                   |              |              |               |               |
+| ------------- | ----------- | ------------ | ----------------- | ------------ | ------------ | ------------- | ------------- |
+| acc           | acc_json    | app_jsdt     | app_lua           | app_python3  | app_python3s | async         | auth          |
+| auth_db       | auth_radius | auth_xkeys   | avpops            | carrierroute | cfg_rpc      | cfgutils      | corex         |
+| counters      | crypto      | ctl          | db_cluster        | db_mongodb   | db_mysql     | db_postgres   | db_redis      |
+| db_sqlite     | db_text     | db_unixodbc  | debugger          | dialog       | dialplan     | dispatcher    | dlgs          |
+| dmq           | dmq_usrloc  | domain       | drouting          | evapi        | evrexec      | exec          | gcrypt        |
+| geoip2        | group       | htable       | http_async_client | http_client  | ipops        | jansson       | json          |
+| jsonrpcs      | jwt         | jwt3         | kemix             | lcr          | ldap         | log_custom    | log_systemd   |
+| lost          | lwsc        | maxfwd       | mqueue            | msilo        | mtree        | nat_traversal | nathelper     |
+| ndb_mongodb   | ndb_redis   | outbound     | p_usrloc          | path         | permissions  | phonenum      | pike          |
+| pipelimit     | pv          | pv_headers   | pvtpl             | regex        | registrar    | rr            | rtimer        |
+| rtjson        | rtpengine   | rtpproxy     | ruxc              | sanity       | sdpops       | secfilter     | secsipid      |
+| secsipid_proc | sipdump     | sipjson      | siprepo           | sipt         | siptrace     | siputils      | sl            |
+| speeddial     | sqlops      | sst          | statistics        | statsc       | statsd       | stun          | sworker       |
+| tcpops        | textops     | textopsx     | tls               | tls_wolfssl  | tlsa         | tm            | tmx           |
+| topoh         | topos       | topos_htable | topos_redis       | tsilo        | uac          | uac_redirect  | userblocklist |
+| usrloc        | utils       | uuid         | websocket         | xhttp        | xlog         | xmlops        | xmlrpc        |
+
 
 ## Kamailio Security Team
 
