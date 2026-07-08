@@ -60,24 +60,30 @@ The Kamailio developers will try to fix these issues as well, but they will not 
 
 The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
 
-|               |             |              |                   |              |              |               |               |
-| ------------- | ----------- | ------------ | ----------------- | ------------ | ------------ | ------------- | ------------- |
-| acc           | acc_json    | app_jsdt     | app_lua           | app_python3  | app_python3s | async         | auth          |
-| auth_db       | auth_radius | auth_xkeys   | avpops            | carrierroute | cfg_rpc      | cfgutils      | corex         |
-| counters      | crypto      | ctl          | db_cluster        | db_mongodb   | db_mysql     | db_postgres   | db_redis      |
-| db_sqlite     | db_text     | db_unixodbc  | debugger          | dialog       | dialplan     | dispatcher    | dlgs          |
-| dmq           | dmq_usrloc  | domain       | drouting          | evapi        | evrexec      | exec          | gcrypt        |
-| geoip2        | group       | htable       | http_async_client | http_client  | ipops        | jansson       | json          |
-| jsonrpcs      | jwt         | jwt3         | kemix             | lcr          | ldap         | log_custom    | log_systemd   |
-| lost          | lwsc        | maxfwd       | mqueue            | msilo        | mtree        | nat_traversal | nathelper     |
-| ndb_mongodb   | ndb_redis   | outbound     | p_usrloc          | path         | permissions  | phonenum      | pike          |
-| pipelimit     | pv          | pv_headers   | pvtpl             | regex        | registrar    | rr            | rtimer        |
-| rtjson        | rtpengine   | rtpproxy     | ruxc              | sanity       | sdpops       | secfilter     | secsipid      |
-| secsipid_proc | sipdump     | sipjson      | siprepo           | sipt         | siptrace     | siputils      | sl            |
-| speeddial     | sqlops      | sst          | statistics        | statsc       | statsd       | stun          | sworker       |
-| tcpops        | textops     | textopsx     | tls               | tls_wolfssl  | tlsa         | tm            | tmx           |
-| topoh         | topos       | topos_htable | topos_redis       | tsilo        | uac          | uac_redirect  | userblocklist |
-| usrloc        | utils       | uuid         | websocket         | xhttp        | xlog         | xmlops        | xmlrpc        |
+| | | | | | |
+| --- | --- | --- | --- | --- | --- |
+| acc | acc_json | app_jsdt | app_lua | app_python3 | app_python3s |
+| async | auth | auth_db | auth_radius | auth_xkeys | avpops |
+| carrierroute | cfg_rpc | cfgutils | corex | counters | crypto |
+| ctl | db_cluster | db_mongodb | db_mysql | db_postgres | db_redis |
+| db_sqlite | db_text | db_unixodbc | debugger | dialog | dialplan |
+| dispatcher | dlgs | dmq | dmq_usrloc | domain | drouting |
+| evapi | evrexec | exec | gcrypt | geoip2 | group |
+| htable | http_async_client | http_client | ipops | jansson | json |
+| jsonrpcs | jwt | jwt3 | kemix | lcr | ldap |
+| log_custom | log_systemd | lost | lwsc | maxfwd | mqueue |
+| msilo | mtree | nat_traversal | nathelper | ndb_mongodb | ndb_redis |
+| outbound | p_usrloc | path | permissions | phonenum | pike |
+| pipelimit | pv | pv_headers | pvtpl | regex | registrar |
+| rr | rtimer | rtjson | rtpengine | rtpproxy | ruxc |
+| sanity | sdpops | secfilter | secsipid | secsipid_proc | sipdump |
+| sipjson | siprepo | sipt | siptrace | siputils | sl |
+| speeddial | sqlops | sst | statistics | statsc | statsd |
+| stun | sworker | tcpops | textops | textopsx | tls |
+| tls_wolfssl | tlsa | tm | tmx | topoh | topos |
+| topos_htable | topos_redis | tsilo | uac | uac_redirect | userblocklist |
+| usrloc | utils | uuid | websocket | xhttp | xlog |
+| xmlops | xmlrpc | | | |
 
 ### Remarks
 
