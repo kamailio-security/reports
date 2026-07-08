@@ -84,6 +84,10 @@ listed in the next table, any issue related to it has to be reported on Kamailio
 | topoh         | topos       | topos_htable | topos_redis       | tsilo        | uac          | uac_redirect  | userblocklist |
 | usrloc        | utils       | uuid         | websocket         | xhttp        | xlog         | xmlops        | xmlrpc        |
 
+Remarks:
+- CDP (Diameter), IMS and SMS modules are expected to be used in secure environments, with trusted and certified UAs that
+  are authenticated by the mobile core network
+- presence modules are expected to be used for authenticated or authorized SIP messages 
 
 ## Kamailio Security Team
 
