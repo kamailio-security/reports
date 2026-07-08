@@ -15,7 +15,8 @@ but you have to maintain the installation from git repository, because packages 
 
 ## Reporting A Vulnerability
 
-If you believe there's a security vulnerability, please don't use the public forums. Please submit using the [`Report a vulnerability`](https://github.com/kamailio-security/reports/security/advisories/new) form linked on upper right corner at:
+If you believe there's a security vulnerability, please don't use the public forums. Submit using the 
+[`Report a vulnerability`](https://github.com/kamailio-security/reports/security/advisories/new) form linked on upper right corner at:
 
 - https://github.com/kamailio-security/reports/security
 
@@ -52,42 +53,41 @@ The Kamailio project release security fixed in the normal time based maintenance
 
 ## List Of Modules
 
-Kamailio has a large set of modules, many of them were designed to be used on private network or processing only traffic from trusted peers or they are in experimetal state. For them, security was not considered a high priority yet and any issue has to be reported as a bug to Kamailio's tracker available at:
+Kamailio has a large set of modules, many of them were designed to be used on private network or processing only traffic from
+trusted peers or they are in experimetal state. For them, security was not considered a high priority yet and any issue has
+to be reported as a bug to Kamailio's tracker available at:
 
 - https://github.com/kamailio/kamailio/issues
 
-The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability and their details are not considered sensitive to be kept private.
+The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability
+and their details are not considered sensitive to be kept private.
 
-The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on [Kamailio's tracker](https://github.com/kamailio/kamailio/issues).
+The next table provides the list of modules for which the potential security issues have to reported here. If the module is not
+listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
 
-| Modules ||||||
-| --- | --- | --- | --- | --- | --- |
-| acc | acc_json | app_jsdt | app_lua | app_python3 | app_python3s |
-| async | auth | auth_db | auth_radius | auth_xkeys | avpops |
-| carrierroute | cfg_rpc | cfgutils | corex | counters | crypto |
-| ctl | db_cluster | db_mongodb | db_mysql | db_postgres | db_redis |
-| db_sqlite | db_text | db_unixodbc | debugger | dialog | dialplan |
-| dispatcher | dlgs | dmq | dmq_usrloc | domain | drouting |
-| evapi | evrexec | exec | gcrypt | geoip2 | group |
-| htable | http_async_client | http_client | ipops | jansson | json |
-| jsonrpcs | jwt | jwt3 | kemix | lcr | ldap |
-| log_custom | log_systemd | lost | lwsc | maxfwd | mqueue |
-| msilo | mtree | nat_traversal | nathelper | ndb_mongodb | ndb_redis |
-| outbound | p_usrloc | path | permissions | phonenum | pike |
-| pipelimit | pv | pv_headers | pvtpl | regex | registrar |
-| rr | rtimer | rtjson | rtpengine | rtpproxy | ruxc |
-| sanity | sdpops | secfilter | secsipid | secsipid_proc | sipdump |
-| sipjson | siprepo | sipt | siptrace | siputils | sl |
-| speeddial | sqlops | sst | statistics | statsc | statsd |
-| stun | sworker | tcpops | textops | textopsx | tls |
-| tls_wolfssl | tlsa | tm | tmx | topoh | topos |
-| topos_htable | topos_redis | tsilo | uac | uac_redirect | userblocklist |
-| usrloc | utils | uuid | websocket | xhttp | xlog |
-| xmlops | xmlrpc | | | |
+|               |             |              |                   |              |              |               |               |
+| ------------- | ----------- | ------------ | ----------------- | ------------ | ------------ | ------------- | ------------- |
+| acc           | acc_json    | app_jsdt     | app_lua           | app_python3  | app_python3s | async         | auth          |
+| auth_db       | auth_radius | auth_xkeys   | avpops            | carrierroute | cfg_rpc      | cfgutils      | corex         |
+| counters      | crypto      | ctl          | db_cluster        | db_mongodb   | db_mysql     | db_postgres   | db_redis      |
+| db_sqlite     | db_text     | db_unixodbc  | debugger          | dialog       | dialplan     | dispatcher    | dlgs          |
+| dmq           | dmq_usrloc  | domain       | drouting          | evapi        | evrexec      | exec          | gcrypt        |
+| geoip2        | group       | htable       | http_async_client | http_client  | ipops        | jansson       | json          |
+| jsonrpcs      | jwt         | jwt3         | kemix             | lcr          | ldap         | log_custom    | log_systemd   |
+| lost          | lwsc        | maxfwd       | mqueue            | msilo        | mtree        | nat_traversal | nathelper     |
+| ndb_mongodb   | ndb_redis   | outbound     | p_usrloc          | path         | permissions  | phonenum      | pike          |
+| pipelimit     | pv          | pv_headers   | pvtpl             | regex        | registrar    | rr            | rtimer        |
+| rtjson        | rtpengine   | rtpproxy     | ruxc              | sanity       | sdpops       | secfilter     | secsipid      |
+| secsipid_proc | sipdump     | sipjson      | siprepo           | sipt         | siptrace     | siputils      | sl            |
+| speeddial     | sqlops      | sst          | statistics        | statsc       | statsd       | stun          | sworker       |
+| tcpops        | textops     | textopsx     | tls               | tls_wolfssl  | tlsa         | tm            | tmx           |
+| topoh         | topos       | topos_htable | topos_redis       | tsilo        | uac          | uac_redirect  | userblocklist |
+| usrloc        | utils       | uuid         | websocket         | xhttp        | xlog         | xmlops        | xmlrpc        |
 
-### Remarks
+## Remarks
 
-- CDP (Diameter), IMS and SMS modules are expected to be used in secure environments, with trusted and certified UAs that are authenticated by the mobile core network
+- CDP (Diameter), IMS and SMS modules are expected to be used in secure environments, with trusted and certified UAs that
+  are authenticated by the mobile core network
 - presence modules are expected to be used for authenticated or authorized SIP messages 
 
 ## Kamailio Security Team
