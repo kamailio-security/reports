@@ -60,7 +60,7 @@ The Kamailio developers will try to fix these issues as well, but they will not 
 
 The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
 
-| | | | | | |
+| Modules ||||||
 | --- | --- | --- | --- | --- | --- |
 | acc | acc_json | app_jsdt | app_lua | app_python3 | app_python3s |
 | async | auth | auth_db | auth_radius | auth_xkeys | avpops |
