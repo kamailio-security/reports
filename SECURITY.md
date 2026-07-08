@@ -15,8 +15,7 @@ but you have to maintain the installation from git repository, because packages 
 
 ## Reporting A Vulnerability
 
-If you believe there's a security vulnerability, please don't use the public forums. Submiting using the form 
-[`Report a vulnerability`](https://github.com/kamailio-security/reports/security/advisories/new) linked on upper right corner at:
+If you believe there's a security vulnerability, please don't use the public forums. Please submit using the [`Report a vulnerability`](https://github.com/kamailio-security/reports/security/advisories/new) form linked on upper right corner at:
 
 - https://github.com/kamailio-security/reports/security
 
@@ -28,7 +27,7 @@ The report should include the following information
 - If the issue was discovered by running Kamailio in production or by code analysis with AI or other tools
 - A detailed explanation of how this issue can be exploited and/or reproduced
 
-The potential security issues have to be reported on this repository for the core of Kamailio and the modules enumerated later in this document in the section `List Of Modules`.
+The potential security issues have to be reported on this repository for the core of Kamailio and the modules enumerated later in this document in the section [`List Of Modules`](#list-of-modules).
 
 ### After The Report
 
@@ -53,17 +52,13 @@ The Kamailio project release security fixed in the normal time based maintenance
 
 ## List Of Modules
 
-Kamailio has a large set of modules, many of them were designed to be used on private network or processing only traffic from
-trusted peers or they are in experimetal state. For them, security was not considered a high priority yet and any issue has
-to be reported as a bug to Kamailio's tracker available at:
+Kamailio has a large set of modules, many of them were designed to be used on private network or processing only traffic from trusted peers or they are in experimetal state. For them, security was not considered a high priority yet and any issue has to be reported as a bug to Kamailio's tracker available at:
 
 - https://github.com/kamailio/kamailio/issues
 
-The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability
-and their details are not considered sensitive to be kept private.
+The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability and their details are not considered sensitive to be kept private.
 
-The next table provides the list of modules for which the potential security issues have to reported here. If the module is not
-listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
+The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
 
 |               |             |              |                   |              |              |               |               |
 | ------------- | ----------- | ------------ | ----------------- | ------------ | ------------ | ------------- | ------------- |
@@ -84,9 +79,9 @@ listed in the next table, any issue related to it has to be reported on Kamailio
 | topoh         | topos       | topos_htable | topos_redis       | tsilo        | uac          | uac_redirect  | userblocklist |
 | usrloc        | utils       | uuid         | websocket         | xhttp        | xlog         | xmlops        | xmlrpc        |
 
-Remarks:
-- CDP (Diameter), IMS and SMS modules are expected to be used in secure environments, with trusted and certified UAs that
-  are authenticated by the mobile core network
+### Remarks
+
+- CDP (Diameter), IMS and SMS modules are expected to be used in secure environments, with trusted and certified UAs that are authenticated by the mobile core network
 - presence modules are expected to be used for authenticated or authorized SIP messages 
 
 ## Kamailio Security Team
@@ -94,4 +89,3 @@ Remarks:
 A Kamailio Security team is appointed with core developers of the project. These individuals will be part of the security process and review patches and text for the vulnerability report. Persons of this group take the role of Kamailio Security Officers. One of these should manage each security incident - which does not mean solving the code issue, but managing the process from report to publication and patch release.
 
 Members of Kamailio Security Team are volunteers, not paid for the work they do in this scope. Everyone should conduct decent conversations, keep the expectations and the demands within reasonable.
-
