@@ -58,7 +58,7 @@ Kamailio has a large set of modules, many of them were designed to be used on pr
 
 The Kamailio developers will try to fix these issues as well, but they will not get the priority of a potential vulnerability and their details are not considered sensitive to be kept private.
 
-The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on Kamailio's tracker.
+The next table provides the list of modules for which the potential security issues have to reported here. If the module is not listed in the next table, any issue related to it has to be reported on [Kamailio's tracker](https://github.com/kamailio/kamailio/issues).
 
 | Modules ||||||
 | --- | --- | --- | --- | --- | --- |
